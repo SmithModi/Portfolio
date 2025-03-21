@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Something Media</title>
+    <meta name="description" content="Something Media Landing Page" />
+    <meta name="author" content="Something Media" />
+
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      
+      body {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom right, #18181b, #000000);
+        color: white;
+        text-align: center;
+      }
+      
+      /* Card styling */
+      .card {
+        max-width: 400px;
+        width: 90%;
+        padding: 2rem;
+        border: 1px solid #27272a;
+        border-radius: 0.5rem;
+        background-color: rgba(24, 24, 27, 0.7);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+      
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.75rem;
+      }
+      
+      /* Logo styling */
+      .logo-container {
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .logo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        animation: pulse 3s infinite ease-in-out;
+      }
+      
+      /* Text styling */
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+      }
+      
+      .description {
+        font-size: 1rem;
+        color: #a1a1aa;
+      }
+      
+      /* Button styling */
+      .button {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        background-color: #27272a;
+        color: white;
+        border: 1px solid #3f3f46;
+        border-radius: 0.375rem;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      }
+      
+      .button:hover {
+        background-color: #3f3f46;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      }
+      
+      /* Footer styling */
+      .footer {
+        font-size: 0.75rem;
+        color: #71717a;
+        padding-top: 1rem;
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 3px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      
+      /* Logo animation */
+      @keyframes pulse {
+        0%, 100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.05);
+          opacity: 0.9;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="content">
+        <!-- Company Logo with animation -->
+        <div class="logo-container">
+            <img 
+            src="public/images/somethingmedialogo.png" 
+            alt="Something Media Logo" 
+            class="logo"
+          />
+          
+        </div>
+        
+        <h1>You're at the right place</h1>
+        
+        <p class="description">
+          We're excited to have you here. Just one click away from our main website.
+        </p>
+        
+        <a 
+          href="https://example.com" 
+          target="_blank" 
+          class="button"
+        >
+          Visit Our Website
+        </a>
+        
+        <p class="footer">
+          © 2023 Something Media. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
